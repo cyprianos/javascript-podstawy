@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Podstawy Javascript</title>
+    <script>
+        // console.log('Hello World');
+        // console.log('Hello asdasd');
+        let wiekJana = 17;
+        let wiekAgnieszki = 18;
+        let roznicaWieku = Math.abs(wiekAgnieszki - wiekJana)
+        const DOROSLOSC = 18;
+        if (wiekJana >= DOROSLOSC) console.log('Jan moze wziac slub');
+        else console.log('Jan nie moze wziac slubu');
+
+        if(wiekAgnieszki >= DOROSLOSC) console.log('Agnieszka moze');
+        else console.log('Agnieszka nie moze');
+
+        let czyAgnieszdkajestDorosla = wiekAgnieszki < DOROSLOSC;
+
+        if(czyAgnieszdkajestDorosla) {
+            console.log('Agnieszka ma mniej niz 17 lat');
+            console.log('Agnieszka nie moze palic papierosow');
+            console.log('Agnieszka nie moze pic alko');
+        }
+
+        if(wiekAgnieszki == 18) {
+            console.log('robie balange z okazji 18 rocznicy urodzin');
+            console.log('przyniescie jedzenie i picie');
+        }
+
+        // przyklad z wypisywaniem caly czas tej samej liczby - 1
+        for (let index = 1; index <=6; index++) {
+            console.log(1);
+        }
+
+        // przyklad z wyswietlaniem liczby zwiekszanej o 1
+        for (let index = 1; index <=6; index++) {
+            console.log(index);
+        }
+        //przyklad z wypisywaniem czegos innego niz sam index, ale tez innego
+        for (let index = 1; index <= 5; index++) {
+            console.log(3 * index + 10 + " kot");
+        }
+        //przyklad z tablica
+        let imiona = ["kot", "pies","mysz","zupa",Infinity, 123, 0.5, 100+10, "zupa2"];
+        for (let index = 0; index <= imiona.length; index++) {
+            console.log(index + ". " + imiona[index]);
+        }
+        
+    </script>
+</head>
+<h1>Podstawy JS</h1>
+
+</html>
