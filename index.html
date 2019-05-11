@@ -45,9 +45,75 @@
         for (let index = 0; index <= imiona.length; index++) {
             console.log(index + ". " + imiona[index]);
         }
+
+        let zwierzeta = ["kot","pies","kogut","mrowka"]
+        for(let index = 0; index < zwierzeta.length;index++) {
+            console.log(index + " " + zwierzeta[index])
+        }
+
+        let ludzie = [
+            {imie: "Pjoter",nazwisko: "Kowalski"},
+            {imie: "Janusz", nazwisko: "Nosacz"},
+            {imie: "Grazyna", nazwisko: "Passatowa"}
+        ]
+
+        for(let index = 0; index < ludzie.length;index++) {
+            console.log(index + " " + ludzie[index].imie + " " + ludzie[index].nazwisko)
+        }
+
+        function pustaFunkcja() {
+            return undefined;
+        }
+
+        function dodaj(a,b) {
+            a + b;
+        }
+
+        function dodajIZwrocWartosc(a, b) {
+            return a + b;
+        }
+        function wypiszTablice(tablica) {
+            for(let index=0;index<tablica.length;index++) {
+                console.log(tablica[index]);
+            }
+
+            return "dlugosc tablicy to " + tablica.length;
+        }
+
+        function wejscie() {
+            let naszaKlasa = document.querySelector('.akapitKlasa');
+            naszaKlasa.innerHTML += " Hurra weszlismy";
+            naszaKlasa.style.color = "brown";
+            naszaKlasa.style.background = "linear-gradient(yellow,red)";
+        }
+
+        function wyjscie() {
+            let naszaKlasa = document.querySelector('.akapitKlasa');
+            naszaKlasa.innerHTML += " Ups teraz wyszlismy";
+            naszaKlasa.style.color = "white";
+            naszaKlasa.style.background = "linear-gradient(black,blue)";
+        }
+
+        function podwojneWejscie () {
+            let naszaKlasa = document.querySelector('.akapitKlasa');
+            naszaKlasa.innerHTML += " Wejscie smoka spoza krzoka";
+            naszaKlasa.style.color = "black";
+            naszaKlasa.style.background = "linear-gradient(yellow,orange)";
+        }
+
+        function zniszcz() {
+            let naszaKlasa = document.querySelector('.akapitKlasa');
+            naszaKlasa.remove();
+        }
+
         
     </script>
 </head>
 <h1>Podstawy JS</h1>
+<p id="superAkapit">Super akapit hahhaahahah</p>
+<p class="akapitKlasa">Nasza klasa juz nikt tam nie wchodzi</p>
+<button ondblclick="podwojneWejscie();" onclick="wejscie();">Wejscie</button>
+<button onclick="wyjscie();">Wyjscie</button>
+<button onclick="zniszcz();">Zniszcz</button>
 
 </html>
